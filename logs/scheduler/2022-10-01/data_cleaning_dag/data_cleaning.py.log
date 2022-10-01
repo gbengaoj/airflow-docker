@@ -1,0 +1,1293 @@
+[2022-10-01 17:03:14,505] {processor.py:153} INFO - Started process (PID=50) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:03:14,541] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:03:14,543] {logging_mixin.py:115} INFO - [2022-10-01 17:03:14,543] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:03:28,109] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:05:08,287] {logging_mixin.py:115} INFO - [2022-10-01 17:05:08,282] {manager.py:508} INFO - Created Permission View: can delete on DAG:data_cleaning_dag
+[2022-10-01 17:05:08,429] {logging_mixin.py:115} INFO - [2022-10-01 17:05:08,429] {manager.py:508} INFO - Created Permission View: can edit on DAG:data_cleaning_dag
+[2022-10-01 17:05:08,473] {logging_mixin.py:115} INFO - [2022-10-01 17:05:08,473] {manager.py:508} INFO - Created Permission View: can read on DAG:data_cleaning_dag
+[2022-10-01 17:05:08,555] {logging_mixin.py:115} INFO - [2022-10-01 17:05:08,478] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:05:08,775] {logging_mixin.py:115} INFO - [2022-10-01 17:05:08,775] {dag.py:2439} INFO - Creating ORM DAG for data_cleaning_dag
+[2022-10-01 17:05:08,500] {logging_mixin.py:115} INFO - [2022-10-01 17:05:08,495] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:05:21,282] {processor.py:153} INFO - Started process (PID=104) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:05:21,284] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:05:21,286] {logging_mixin.py:115} INFO - [2022-10-01 17:05:21,286] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:05:23,150] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:05:23,212] {logging_mixin.py:115} INFO - [2022-10-01 17:05:23,207] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:05:23,231] {logging_mixin.py:115} INFO - [2022-10-01 17:05:23,231] {dag.py:2439} INFO - Creating ORM DAG for data_cleaning_dag
+[2022-10-01 17:05:23,261] {logging_mixin.py:115} INFO - [2022-10-01 17:05:23,261] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:05:23,307] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 2.033 seconds
+[2022-10-01 17:08:10,461] {processor.py:153} INFO - Started process (PID=129) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:08:10,470] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:08:10,486] {logging_mixin.py:115} INFO - [2022-10-01 17:08:10,485] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:08:41,353] {logging_mixin.py:115} INFO - [2022-10-01 17:08:40,727] {timeout.py:67} ERROR - Process timed out, PID: 129
+[2022-10-01 17:08:51,427] {logging_mixin.py:115} INFO - [2022-10-01 17:08:50,453] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_cleaning_dag/data_cleaning.py", line 3, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/compat/__init__.py", line 15, in <module>
+    from pandas.compat.numpy import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/compat/numpy/__init__.py", line 7, in <module>
+    from pandas.util.version import Version
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/__init__.py", line 1, in <module>
+    from pandas.util._decorators import (  # noqa
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly  # noqa
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+  File "pandas/_libs/hashtable.pyx", line 1, in init pandas._libs.hashtable
+  File "pandas/_libs/missing.pyx", line 1, in init pandas._libs.missing
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/_libs/tslibs/__init__.py", line 31, in <module>
+    from pandas._libs.tslibs.conversion import (
+  File "pandas/_libs/tslibs/conversion.pyx", line 63, in init pandas._libs.tslibs.conversion
+  File "pandas/_libs/tslibs/parsing.pyx", line 1, in init pandas._libs.tslibs.parsing
+  File "pandas/_libs/tslibs/offsets.pyx", line 1, in init pandas._libs.tslibs.offsets
+  File "pandas/_libs/tslibs/timedeltas.pyx", line 61, in init pandas._libs.tslibs.timedeltas
+  File "pandas/_libs/tslibs/fields.pyx", line 22, in init pandas._libs.tslibs.fields
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/_config/__init__.py", line 18, in <module>
+    from pandas._config import config
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 812, in get_code
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/data_cleaning_dag/data_cleaning.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.3/best-practices.html#reducing-dag-complexity, PID: 129
+[2022-10-01 17:08:51,489] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:08:52,091] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 41.669 seconds
+[2022-10-01 17:11:04,841] {processor.py:153} INFO - Started process (PID=173) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:30:48,399] {processor.py:153} INFO - Started process (PID=42) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:30:48,401] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:30:48,404] {logging_mixin.py:115} INFO - [2022-10-01 17:30:48,403] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:30:49,450] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:30:49,529] {logging_mixin.py:115} INFO - [2022-10-01 17:30:49,528] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:30:49,584] {logging_mixin.py:115} INFO - [2022-10-01 17:30:49,583] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:30:49,611] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.217 seconds
+[2022-10-01 17:31:20,390] {processor.py:153} INFO - Started process (PID=98) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:31:20,392] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:31:20,394] {logging_mixin.py:115} INFO - [2022-10-01 17:31:20,394] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:31:21,870] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:31:21,914] {logging_mixin.py:115} INFO - [2022-10-01 17:31:21,913] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:31:21,952] {logging_mixin.py:115} INFO - [2022-10-01 17:31:21,952] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:31:21,973] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.589 seconds
+[2022-10-01 17:31:52,650] {processor.py:153} INFO - Started process (PID=154) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:31:52,651] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:31:52,652] {logging_mixin.py:115} INFO - [2022-10-01 17:31:52,652] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:31:53,154] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:31:53,186] {logging_mixin.py:115} INFO - [2022-10-01 17:31:53,186] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:31:53,212] {logging_mixin.py:115} INFO - [2022-10-01 17:31:53,212] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:31:53,227] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.583 seconds
+[2022-10-01 17:32:23,452] {processor.py:153} INFO - Started process (PID=218) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:32:23,454] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:32:23,456] {logging_mixin.py:115} INFO - [2022-10-01 17:32:23,455] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:32:23,958] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:32:23,986] {logging_mixin.py:115} INFO - [2022-10-01 17:32:23,985] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:32:24,021] {logging_mixin.py:115} INFO - [2022-10-01 17:32:24,021] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:32:24,040] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.593 seconds
+[2022-10-01 17:32:54,220] {processor.py:153} INFO - Started process (PID=273) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:32:54,222] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:32:54,223] {logging_mixin.py:115} INFO - [2022-10-01 17:32:54,223] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:32:54,734] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:32:54,763] {logging_mixin.py:115} INFO - [2022-10-01 17:32:54,762] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:32:54,811] {logging_mixin.py:115} INFO - [2022-10-01 17:32:54,811] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:32:54,838] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.626 seconds
+[2022-10-01 17:33:24,938] {processor.py:153} INFO - Started process (PID=336) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:33:24,940] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:33:24,941] {logging_mixin.py:115} INFO - [2022-10-01 17:33:24,941] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:33:25,584] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:33:25,614] {logging_mixin.py:115} INFO - [2022-10-01 17:33:25,613] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:33:25,656] {logging_mixin.py:115} INFO - [2022-10-01 17:33:25,656] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:33:25,677] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.745 seconds
+[2022-10-01 17:33:56,038] {processor.py:153} INFO - Started process (PID=400) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:33:56,040] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:33:56,043] {logging_mixin.py:115} INFO - [2022-10-01 17:33:56,042] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:33:56,721] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:33:56,762] {logging_mixin.py:115} INFO - [2022-10-01 17:33:56,761] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:33:56,806] {logging_mixin.py:115} INFO - [2022-10-01 17:33:56,806] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:33:56,832] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.809 seconds
+[2022-10-01 17:34:27,584] {processor.py:153} INFO - Started process (PID=454) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:34:27,586] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:34:27,587] {logging_mixin.py:115} INFO - [2022-10-01 17:34:27,587] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:34:27,968] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:34:27,993] {logging_mixin.py:115} INFO - [2022-10-01 17:34:27,992] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:34:28,028] {logging_mixin.py:115} INFO - [2022-10-01 17:34:28,027] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:34:28,045] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.466 seconds
+[2022-10-01 17:34:58,130] {processor.py:153} INFO - Started process (PID=517) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:34:58,132] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:34:58,134] {logging_mixin.py:115} INFO - [2022-10-01 17:34:58,133] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:34:58,947] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:34:59,119] {logging_mixin.py:115} INFO - [2022-10-01 17:34:59,114] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:34:59,232] {logging_mixin.py:115} INFO - [2022-10-01 17:34:59,232] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:34:59,289] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.164 seconds
+[2022-10-01 17:35:29,979] {processor.py:153} INFO - Started process (PID=571) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:35:29,980] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:35:29,982] {logging_mixin.py:115} INFO - [2022-10-01 17:35:29,981] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:35:30,600] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:35:30,642] {logging_mixin.py:115} INFO - [2022-10-01 17:35:30,641] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:35:30,685] {logging_mixin.py:115} INFO - [2022-10-01 17:35:30,685] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:35:30,701] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.727 seconds
+[2022-10-01 17:36:00,873] {processor.py:153} INFO - Started process (PID=636) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:36:00,875] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:36:00,877] {logging_mixin.py:115} INFO - [2022-10-01 17:36:00,877] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:36:01,357] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:36:01,386] {logging_mixin.py:115} INFO - [2022-10-01 17:36:01,386] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:36:01,410] {logging_mixin.py:115} INFO - [2022-10-01 17:36:01,410] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:36:01,425] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.560 seconds
+[2022-10-01 17:36:31,538] {processor.py:153} INFO - Started process (PID=692) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:36:31,539] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:36:31,540] {logging_mixin.py:115} INFO - [2022-10-01 17:36:31,540] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:36:32,057] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:36:32,086] {logging_mixin.py:115} INFO - [2022-10-01 17:36:32,086] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:36:32,115] {logging_mixin.py:115} INFO - [2022-10-01 17:36:32,115] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:36:32,146] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.614 seconds
+[2022-10-01 17:37:02,916] {processor.py:153} INFO - Started process (PID=756) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:37:02,918] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:37:02,921] {logging_mixin.py:115} INFO - [2022-10-01 17:37:02,920] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:37:04,599] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:37:04,666] {logging_mixin.py:115} INFO - [2022-10-01 17:37:04,666] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:37:04,748] {logging_mixin.py:115} INFO - [2022-10-01 17:37:04,747] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:37:04,792] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.880 seconds
+[2022-10-01 17:37:35,384] {processor.py:153} INFO - Started process (PID=811) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:37:35,386] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:37:35,388] {logging_mixin.py:115} INFO - [2022-10-01 17:37:35,388] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:37:35,996] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:37:36,026] {logging_mixin.py:115} INFO - [2022-10-01 17:37:36,026] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:37:36,053] {logging_mixin.py:115} INFO - [2022-10-01 17:37:36,053] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:37:36,070] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.695 seconds
+[2022-10-01 17:38:06,678] {processor.py:153} INFO - Started process (PID=877) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:38:06,680] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:38:06,682] {logging_mixin.py:115} INFO - [2022-10-01 17:38:06,682] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:38:07,120] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:38:07,142] {logging_mixin.py:115} INFO - [2022-10-01 17:38:07,142] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:38:07,166] {logging_mixin.py:115} INFO - [2022-10-01 17:38:07,166] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:38:07,188] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.517 seconds
+[2022-10-01 17:38:37,639] {processor.py:153} INFO - Started process (PID=940) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:38:37,640] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:38:37,642] {logging_mixin.py:115} INFO - [2022-10-01 17:38:37,642] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:38:38,243] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:38:38,273] {logging_mixin.py:115} INFO - [2022-10-01 17:38:38,272] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:38:38,304] {logging_mixin.py:115} INFO - [2022-10-01 17:38:38,304] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:38:38,339] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.705 seconds
+[2022-10-01 17:39:08,619] {processor.py:153} INFO - Started process (PID=995) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:39:08,621] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:39:08,623] {logging_mixin.py:115} INFO - [2022-10-01 17:39:08,622] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:39:09,462] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:39:09,500] {logging_mixin.py:115} INFO - [2022-10-01 17:39:09,499] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:39:09,534] {logging_mixin.py:115} INFO - [2022-10-01 17:39:09,534] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:39:09,558] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.946 seconds
+[2022-10-01 17:39:39,801] {processor.py:153} INFO - Started process (PID=1059) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:39:39,803] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:39:39,804] {logging_mixin.py:115} INFO - [2022-10-01 17:39:39,804] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:39:40,430] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:39:40,471] {logging_mixin.py:115} INFO - [2022-10-01 17:39:40,470] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:39:40,532] {logging_mixin.py:115} INFO - [2022-10-01 17:39:40,531] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:39:40,595] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.801 seconds
+[2022-10-01 17:40:11,480] {processor.py:153} INFO - Started process (PID=1115) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:40:11,481] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:40:11,483] {logging_mixin.py:115} INFO - [2022-10-01 17:40:11,483] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:40:11,932] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:40:11,961] {logging_mixin.py:115} INFO - [2022-10-01 17:40:11,960] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:40:11,989] {logging_mixin.py:115} INFO - [2022-10-01 17:40:11,989] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:40:12,012] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.536 seconds
+[2022-10-01 17:40:42,130] {processor.py:153} INFO - Started process (PID=1181) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:40:42,136] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:40:42,138] {logging_mixin.py:115} INFO - [2022-10-01 17:40:42,137] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:40:42,668] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:40:42,696] {logging_mixin.py:115} INFO - [2022-10-01 17:40:42,696] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:40:42,728] {logging_mixin.py:115} INFO - [2022-10-01 17:40:42,728] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:40:42,746] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.623 seconds
+[2022-10-01 17:41:13,252] {processor.py:153} INFO - Started process (PID=1245) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:41:13,254] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:41:13,255] {logging_mixin.py:115} INFO - [2022-10-01 17:41:13,255] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:41:13,644] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:41:13,667] {logging_mixin.py:115} INFO - [2022-10-01 17:41:13,666] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:41:13,689] {logging_mixin.py:115} INFO - [2022-10-01 17:41:13,689] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:41:13,701] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.455 seconds
+[2022-10-01 17:41:43,834] {processor.py:153} INFO - Started process (PID=1301) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:41:43,836] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:41:43,837] {logging_mixin.py:115} INFO - [2022-10-01 17:41:43,837] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:41:44,329] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:41:44,353] {logging_mixin.py:115} INFO - [2022-10-01 17:41:44,352] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:41:44,378] {logging_mixin.py:115} INFO - [2022-10-01 17:41:44,378] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:41:44,391] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.561 seconds
+[2022-10-01 17:42:14,542] {processor.py:153} INFO - Started process (PID=1367) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:42:14,544] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:42:14,546] {logging_mixin.py:115} INFO - [2022-10-01 17:42:14,546] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:42:15,172] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:42:15,206] {logging_mixin.py:115} INFO - [2022-10-01 17:42:15,205] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:42:15,235] {logging_mixin.py:115} INFO - [2022-10-01 17:42:15,235] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:42:15,254] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.718 seconds
+[2022-10-01 17:42:45,340] {processor.py:153} INFO - Started process (PID=1431) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:42:45,342] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:42:45,344] {logging_mixin.py:115} INFO - [2022-10-01 17:42:45,344] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:42:46,272] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:42:46,345] {logging_mixin.py:115} INFO - [2022-10-01 17:42:46,344] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:42:46,424] {logging_mixin.py:115} INFO - [2022-10-01 17:42:46,424] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:42:46,474] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.143 seconds
+[2022-10-01 17:43:16,651] {processor.py:153} INFO - Started process (PID=1486) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:43:16,652] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:43:16,654] {logging_mixin.py:115} INFO - [2022-10-01 17:43:16,654] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:43:17,235] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:43:17,285] {logging_mixin.py:115} INFO - [2022-10-01 17:43:17,284] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:43:17,335] {logging_mixin.py:115} INFO - [2022-10-01 17:43:17,335] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:43:17,359] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.713 seconds
+[2022-10-01 17:43:47,455] {processor.py:153} INFO - Started process (PID=1550) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:43:47,457] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:43:47,458] {logging_mixin.py:115} INFO - [2022-10-01 17:43:47,458] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:43:47,991] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:43:48,019] {logging_mixin.py:115} INFO - [2022-10-01 17:43:48,019] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:43:48,048] {logging_mixin.py:115} INFO - [2022-10-01 17:43:48,048] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:43:48,065] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.614 seconds
+[2022-10-01 17:44:18,127] {processor.py:153} INFO - Started process (PID=1605) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:44:18,129] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:44:18,130] {logging_mixin.py:115} INFO - [2022-10-01 17:44:18,130] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:44:18,646] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:44:18,679] {logging_mixin.py:115} INFO - [2022-10-01 17:44:18,679] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:44:18,735] {logging_mixin.py:115} INFO - [2022-10-01 17:44:18,735] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:44:18,755] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.634 seconds
+[2022-10-01 17:44:49,478] {processor.py:153} INFO - Started process (PID=1668) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:44:49,479] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:44:49,482] {logging_mixin.py:115} INFO - [2022-10-01 17:44:49,482] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:44:50,062] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:44:50,086] {logging_mixin.py:115} INFO - [2022-10-01 17:44:50,085] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:44:50,111] {logging_mixin.py:115} INFO - [2022-10-01 17:44:50,111] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:44:50,126] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.655 seconds
+[2022-10-01 17:45:21,158] {processor.py:153} INFO - Started process (PID=1725) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:45:21,161] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:45:21,163] {logging_mixin.py:115} INFO - [2022-10-01 17:45:21,163] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:45:22,069] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:45:22,116] {logging_mixin.py:115} INFO - [2022-10-01 17:45:22,115] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:45:22,181] {logging_mixin.py:115} INFO - [2022-10-01 17:45:22,181] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:45:22,230] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.083 seconds
+[2022-10-01 17:45:52,380] {processor.py:153} INFO - Started process (PID=1789) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:45:52,382] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:45:52,383] {logging_mixin.py:115} INFO - [2022-10-01 17:45:52,383] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:45:52,932] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:45:52,961] {logging_mixin.py:115} INFO - [2022-10-01 17:45:52,960] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:45:52,989] {logging_mixin.py:115} INFO - [2022-10-01 17:45:52,989] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:45:53,008] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.632 seconds
+[2022-10-01 17:46:23,581] {processor.py:153} INFO - Started process (PID=1844) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:46:23,582] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:46:23,584] {logging_mixin.py:115} INFO - [2022-10-01 17:46:23,584] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:46:23,976] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:46:24,000] {logging_mixin.py:115} INFO - [2022-10-01 17:46:24,000] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:46:24,020] {logging_mixin.py:115} INFO - [2022-10-01 17:46:24,020] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:46:24,035] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.460 seconds
+[2022-10-01 17:46:54,120] {processor.py:153} INFO - Started process (PID=1907) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:46:54,122] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:46:54,124] {logging_mixin.py:115} INFO - [2022-10-01 17:46:54,123] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:46:54,632] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:46:54,683] {logging_mixin.py:115} INFO - [2022-10-01 17:46:54,682] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:46:54,718] {logging_mixin.py:115} INFO - [2022-10-01 17:46:54,718] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:46:54,752] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.639 seconds
+[2022-10-01 17:47:24,822] {processor.py:153} INFO - Started process (PID=1962) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:47:24,823] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:47:24,825] {logging_mixin.py:115} INFO - [2022-10-01 17:47:24,824] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:47:25,226] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:47:25,250] {logging_mixin.py:115} INFO - [2022-10-01 17:47:25,249] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:47:25,271] {logging_mixin.py:115} INFO - [2022-10-01 17:47:25,271] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:47:25,293] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.476 seconds
+[2022-10-01 17:47:56,124] {processor.py:153} INFO - Started process (PID=2025) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:47:56,125] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:47:56,127] {logging_mixin.py:115} INFO - [2022-10-01 17:47:56,127] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:47:56,556] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:47:56,582] {logging_mixin.py:115} INFO - [2022-10-01 17:47:56,581] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:47:56,608] {logging_mixin.py:115} INFO - [2022-10-01 17:47:56,607] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:47:56,623] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.503 seconds
+[2022-10-01 17:48:26,745] {processor.py:153} INFO - Started process (PID=2090) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:48:26,746] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:48:26,748] {logging_mixin.py:115} INFO - [2022-10-01 17:48:26,748] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:48:27,345] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:48:27,371] {logging_mixin.py:115} INFO - [2022-10-01 17:48:27,370] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:48:27,395] {logging_mixin.py:115} INFO - [2022-10-01 17:48:27,395] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:48:27,412] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.675 seconds
+[2022-10-01 17:48:57,490] {processor.py:153} INFO - Started process (PID=2146) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:48:57,492] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:48:57,493] {logging_mixin.py:115} INFO - [2022-10-01 17:48:57,493] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:48:57,921] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:48:57,949] {logging_mixin.py:115} INFO - [2022-10-01 17:48:57,948] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:48:57,982] {logging_mixin.py:115} INFO - [2022-10-01 17:48:57,982] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:48:58,092] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.607 seconds
+[2022-10-01 17:49:28,204] {processor.py:153} INFO - Started process (PID=2208) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:49:28,206] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:49:28,208] {logging_mixin.py:115} INFO - [2022-10-01 17:49:28,208] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:49:28,778] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:49:28,807] {logging_mixin.py:115} INFO - [2022-10-01 17:49:28,806] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:49:28,858] {logging_mixin.py:115} INFO - [2022-10-01 17:49:28,858] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:49:28,910] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.712 seconds
+[2022-10-01 17:49:59,654] {processor.py:153} INFO - Started process (PID=2271) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:49:59,657] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:49:59,659] {logging_mixin.py:115} INFO - [2022-10-01 17:49:59,659] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:50:00,452] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:50:00,491] {logging_mixin.py:115} INFO - [2022-10-01 17:50:00,491] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:50:00,528] {logging_mixin.py:115} INFO - [2022-10-01 17:50:00,528] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:50:00,555] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.909 seconds
+[2022-10-01 17:50:30,983] {processor.py:153} INFO - Started process (PID=2326) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:50:30,984] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:50:30,986] {logging_mixin.py:115} INFO - [2022-10-01 17:50:30,986] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:50:31,510] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:50:31,555] {logging_mixin.py:115} INFO - [2022-10-01 17:50:31,554] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:50:31,599] {logging_mixin.py:115} INFO - [2022-10-01 17:50:31,599] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:50:31,623] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.645 seconds
+[2022-10-01 17:51:01,757] {processor.py:153} INFO - Started process (PID=2392) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:51:01,759] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:51:01,761] {logging_mixin.py:115} INFO - [2022-10-01 17:51:01,761] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:51:02,506] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:51:02,540] {logging_mixin.py:115} INFO - [2022-10-01 17:51:02,539] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:51:02,576] {logging_mixin.py:115} INFO - [2022-10-01 17:51:02,575] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:51:02,593] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.844 seconds
+[2022-10-01 17:51:32,896] {processor.py:153} INFO - Started process (PID=2449) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:51:32,898] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:51:32,900] {logging_mixin.py:115} INFO - [2022-10-01 17:51:32,900] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:51:33,399] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:51:33,431] {logging_mixin.py:115} INFO - [2022-10-01 17:51:33,430] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:51:33,465] {logging_mixin.py:115} INFO - [2022-10-01 17:51:33,465] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:51:33,486] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.597 seconds
+[2022-10-01 17:52:04,091] {processor.py:153} INFO - Started process (PID=2513) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:52:04,092] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:52:04,094] {logging_mixin.py:115} INFO - [2022-10-01 17:52:04,094] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:52:04,496] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:52:04,522] {logging_mixin.py:115} INFO - [2022-10-01 17:52:04,521] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:52:04,544] {logging_mixin.py:115} INFO - [2022-10-01 17:52:04,544] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:52:04,561] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.474 seconds
+[2022-10-01 17:52:35,156] {processor.py:153} INFO - Started process (PID=2568) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:52:35,159] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:52:35,161] {logging_mixin.py:115} INFO - [2022-10-01 17:52:35,160] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:52:36,222] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:52:36,275] {logging_mixin.py:115} INFO - [2022-10-01 17:52:36,274] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:52:36,335] {logging_mixin.py:115} INFO - [2022-10-01 17:52:36,335] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:52:36,365] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.217 seconds
+[2022-10-01 17:53:06,477] {processor.py:153} INFO - Started process (PID=2631) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:53:06,479] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:53:06,481] {logging_mixin.py:115} INFO - [2022-10-01 17:53:06,481] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:53:07,170] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:53:07,220] {logging_mixin.py:115} INFO - [2022-10-01 17:53:07,219] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:53:07,254] {logging_mixin.py:115} INFO - [2022-10-01 17:53:07,254] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:53:07,279] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.811 seconds
+[2022-10-01 17:53:37,397] {processor.py:153} INFO - Started process (PID=2685) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:53:37,399] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:53:37,400] {logging_mixin.py:115} INFO - [2022-10-01 17:53:37,400] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:53:37,889] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:53:37,917] {logging_mixin.py:115} INFO - [2022-10-01 17:53:37,916] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:53:37,943] {logging_mixin.py:115} INFO - [2022-10-01 17:53:37,943] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:53:37,959] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.568 seconds
+[2022-10-01 17:54:08,239] {processor.py:153} INFO - Started process (PID=2748) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:54:08,241] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:54:08,242] {logging_mixin.py:115} INFO - [2022-10-01 17:54:08,242] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:54:08,736] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:54:08,764] {logging_mixin.py:115} INFO - [2022-10-01 17:54:08,764] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:54:08,792] {logging_mixin.py:115} INFO - [2022-10-01 17:54:08,792] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:54:08,809] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.574 seconds
+[2022-10-01 17:54:39,576] {processor.py:153} INFO - Started process (PID=2803) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:54:39,578] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:54:39,579] {logging_mixin.py:115} INFO - [2022-10-01 17:54:39,579] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:54:39,961] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:54:39,988] {logging_mixin.py:115} INFO - [2022-10-01 17:54:39,987] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:54:40,019] {logging_mixin.py:115} INFO - [2022-10-01 17:54:40,019] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:54:40,034] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.462 seconds
+[2022-10-01 17:55:10,465] {processor.py:153} INFO - Started process (PID=2868) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:55:10,467] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:55:10,468] {logging_mixin.py:115} INFO - [2022-10-01 17:55:10,468] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:55:10,848] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:55:10,872] {logging_mixin.py:115} INFO - [2022-10-01 17:55:10,872] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:55:10,895] {logging_mixin.py:115} INFO - [2022-10-01 17:55:10,895] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:55:10,909] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.450 seconds
+[2022-10-01 17:55:41,892] {processor.py:153} INFO - Started process (PID=2923) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:55:41,893] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:55:41,895] {logging_mixin.py:115} INFO - [2022-10-01 17:55:41,894] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:55:42,333] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:55:42,358] {logging_mixin.py:115} INFO - [2022-10-01 17:55:42,357] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:55:42,386] {logging_mixin.py:115} INFO - [2022-10-01 17:55:42,386] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:55:42,413] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.525 seconds
+[2022-10-01 17:56:12,823] {processor.py:153} INFO - Started process (PID=2986) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:56:12,824] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:56:12,826] {logging_mixin.py:115} INFO - [2022-10-01 17:56:12,826] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:56:13,206] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:56:13,238] {logging_mixin.py:115} INFO - [2022-10-01 17:56:13,237] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:56:13,260] {logging_mixin.py:115} INFO - [2022-10-01 17:56:13,260] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:56:13,275] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.459 seconds
+[2022-10-01 17:56:43,327] {processor.py:153} INFO - Started process (PID=3050) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:56:43,329] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:56:43,331] {logging_mixin.py:115} INFO - [2022-10-01 17:56:43,331] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:56:43,889] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:56:43,920] {logging_mixin.py:115} INFO - [2022-10-01 17:56:43,919] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:56:43,951] {logging_mixin.py:115} INFO - [2022-10-01 17:56:43,950] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:56:43,967] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.644 seconds
+[2022-10-01 17:57:14,685] {processor.py:153} INFO - Started process (PID=3104) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:57:14,686] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:57:14,687] {logging_mixin.py:115} INFO - [2022-10-01 17:57:14,687] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:57:15,099] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:57:15,125] {logging_mixin.py:115} INFO - [2022-10-01 17:57:15,124] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:57:15,149] {logging_mixin.py:115} INFO - [2022-10-01 17:57:15,148] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:57:15,165] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.485 seconds
+[2022-10-01 17:57:45,874] {processor.py:153} INFO - Started process (PID=3168) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:57:45,875] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:57:45,877] {logging_mixin.py:115} INFO - [2022-10-01 17:57:45,877] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:57:46,354] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:57:46,383] {logging_mixin.py:115} INFO - [2022-10-01 17:57:46,382] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:57:46,410] {logging_mixin.py:115} INFO - [2022-10-01 17:57:46,410] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:57:46,426] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.558 seconds
+[2022-10-01 17:58:17,482] {processor.py:153} INFO - Started process (PID=3223) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:58:17,483] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:58:17,485] {logging_mixin.py:115} INFO - [2022-10-01 17:58:17,485] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:58:17,869] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:58:17,892] {logging_mixin.py:115} INFO - [2022-10-01 17:58:17,891] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:58:17,915] {logging_mixin.py:115} INFO - [2022-10-01 17:58:17,915] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:58:17,930] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.452 seconds
+[2022-10-01 17:58:48,655] {processor.py:153} INFO - Started process (PID=3287) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:58:48,657] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:58:48,658] {logging_mixin.py:115} INFO - [2022-10-01 17:58:48,658] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:58:49,010] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:58:49,033] {logging_mixin.py:115} INFO - [2022-10-01 17:58:49,032] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:58:49,054] {logging_mixin.py:115} INFO - [2022-10-01 17:58:49,054] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:58:49,073] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.424 seconds
+[2022-10-01 17:59:20,022] {processor.py:153} INFO - Started process (PID=3353) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:59:20,024] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:59:20,027] {logging_mixin.py:115} INFO - [2022-10-01 17:59:20,026] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:59:20,785] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:59:20,824] {logging_mixin.py:115} INFO - [2022-10-01 17:59:20,824] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:59:20,860] {logging_mixin.py:115} INFO - [2022-10-01 17:59:20,860] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:59:20,881] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.868 seconds
+[2022-10-01 17:59:51,505] {processor.py:153} INFO - Started process (PID=3407) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:59:51,507] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 17:59:51,508] {logging_mixin.py:115} INFO - [2022-10-01 17:59:51,508] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:59:51,981] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 17:59:52,011] {logging_mixin.py:115} INFO - [2022-10-01 17:59:52,010] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 17:59:52,038] {logging_mixin.py:115} INFO - [2022-10-01 17:59:52,038] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 17:59:52,054] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.553 seconds
+[2022-10-01 18:00:22,343] {processor.py:153} INFO - Started process (PID=3471) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:00:22,345] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:00:22,349] {logging_mixin.py:115} INFO - [2022-10-01 18:00:22,348] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:00:23,027] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:00:23,060] {logging_mixin.py:115} INFO - [2022-10-01 18:00:23,059] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:00:23,091] {logging_mixin.py:115} INFO - [2022-10-01 18:00:23,091] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:00:23,110] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.773 seconds
+[2022-10-01 18:00:53,721] {processor.py:153} INFO - Started process (PID=3535) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:00:53,722] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:00:53,724] {logging_mixin.py:115} INFO - [2022-10-01 18:00:53,723] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:00:54,422] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:00:54,462] {logging_mixin.py:115} INFO - [2022-10-01 18:00:54,461] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:00:54,505] {logging_mixin.py:115} INFO - [2022-10-01 18:00:54,505] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:00:54,528] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.813 seconds
+[2022-10-01 18:01:24,714] {processor.py:153} INFO - Started process (PID=3591) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:01:24,715] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:01:24,717] {logging_mixin.py:115} INFO - [2022-10-01 18:01:24,717] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:01:25,309] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:01:25,348] {logging_mixin.py:115} INFO - [2022-10-01 18:01:25,348] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:01:25,386] {logging_mixin.py:115} INFO - [2022-10-01 18:01:25,385] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:01:25,405] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.697 seconds
+[2022-10-01 18:01:55,647] {processor.py:153} INFO - Started process (PID=3655) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:01:55,650] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:01:55,654] {logging_mixin.py:115} INFO - [2022-10-01 18:01:55,654] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:01:56,279] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:01:56,310] {logging_mixin.py:115} INFO - [2022-10-01 18:01:56,309] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:01:56,342] {logging_mixin.py:115} INFO - [2022-10-01 18:01:56,342] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:01:56,358] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.723 seconds
+[2022-10-01 18:02:26,496] {processor.py:153} INFO - Started process (PID=3711) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:02:26,498] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:02:26,500] {logging_mixin.py:115} INFO - [2022-10-01 18:02:26,500] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:02:26,913] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:02:26,939] {logging_mixin.py:115} INFO - [2022-10-01 18:02:26,938] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:02:26,962] {logging_mixin.py:115} INFO - [2022-10-01 18:02:26,962] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:02:26,984] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.496 seconds
+[2022-10-01 18:02:57,673] {processor.py:153} INFO - Started process (PID=3774) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:02:57,675] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:02:57,676] {logging_mixin.py:115} INFO - [2022-10-01 18:02:57,676] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:02:58,062] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:02:58,087] {logging_mixin.py:115} INFO - [2022-10-01 18:02:58,087] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:02:58,110] {logging_mixin.py:115} INFO - [2022-10-01 18:02:58,110] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:02:58,134] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.466 seconds
+[2022-10-01 18:03:28,475] {processor.py:153} INFO - Started process (PID=3838) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:03:28,477] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:03:28,478] {logging_mixin.py:115} INFO - [2022-10-01 18:03:28,478] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:03:28,998] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:03:29,027] {logging_mixin.py:115} INFO - [2022-10-01 18:03:29,026] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:03:29,057] {logging_mixin.py:115} INFO - [2022-10-01 18:03:29,057] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:03:29,081] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.612 seconds
+[2022-10-01 18:03:59,284] {processor.py:153} INFO - Started process (PID=3895) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:03:59,285] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:03:59,287] {logging_mixin.py:115} INFO - [2022-10-01 18:03:59,287] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:03:59,655] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:03:59,682] {logging_mixin.py:115} INFO - [2022-10-01 18:03:59,681] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:03:59,708] {logging_mixin.py:115} INFO - [2022-10-01 18:03:59,708] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:03:59,758] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.482 seconds
+[2022-10-01 18:04:29,961] {processor.py:153} INFO - Started process (PID=3957) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:04:29,963] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:04:29,964] {logging_mixin.py:115} INFO - [2022-10-01 18:04:29,964] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:04:30,431] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:04:30,454] {logging_mixin.py:115} INFO - [2022-10-01 18:04:30,453] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:04:30,476] {logging_mixin.py:115} INFO - [2022-10-01 18:04:30,476] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:04:30,489] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.533 seconds
+[2022-10-01 18:05:01,409] {processor.py:153} INFO - Started process (PID=4012) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:05:01,410] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:05:01,412] {logging_mixin.py:115} INFO - [2022-10-01 18:05:01,412] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:05:01,812] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:05:01,834] {logging_mixin.py:115} INFO - [2022-10-01 18:05:01,834] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:05:01,857] {logging_mixin.py:115} INFO - [2022-10-01 18:05:01,857] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:05:01,878] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.473 seconds
+[2022-10-01 18:05:32,035] {processor.py:153} INFO - Started process (PID=4076) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:05:32,037] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:05:32,039] {logging_mixin.py:115} INFO - [2022-10-01 18:05:32,038] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:05:32,441] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:05:32,467] {logging_mixin.py:115} INFO - [2022-10-01 18:05:32,466] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:05:32,492] {logging_mixin.py:115} INFO - [2022-10-01 18:05:32,492] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:05:32,511] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.483 seconds
+[2022-10-01 18:06:02,957] {processor.py:153} INFO - Started process (PID=4139) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:06:02,958] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:06:02,960] {logging_mixin.py:115} INFO - [2022-10-01 18:06:02,959] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:06:03,476] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:06:03,505] {logging_mixin.py:115} INFO - [2022-10-01 18:06:03,504] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:06:03,535] {logging_mixin.py:115} INFO - [2022-10-01 18:06:03,535] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:06:03,552] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.601 seconds
+[2022-10-01 18:06:33,758] {processor.py:153} INFO - Started process (PID=4194) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:06:33,759] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:06:33,761] {logging_mixin.py:115} INFO - [2022-10-01 18:06:33,761] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:06:34,202] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:06:34,236] {logging_mixin.py:115} INFO - [2022-10-01 18:06:34,235] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:06:34,268] {logging_mixin.py:115} INFO - [2022-10-01 18:06:34,268] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:06:34,289] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.537 seconds
+[2022-10-01 18:07:05,193] {processor.py:153} INFO - Started process (PID=4258) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:07:05,195] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:07:05,196] {logging_mixin.py:115} INFO - [2022-10-01 18:07:05,196] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:07:05,667] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:07:05,702] {logging_mixin.py:115} INFO - [2022-10-01 18:07:05,701] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:07:05,729] {logging_mixin.py:115} INFO - [2022-10-01 18:07:05,729] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:07:05,745] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.558 seconds
+[2022-10-01 18:07:36,638] {processor.py:153} INFO - Started process (PID=4320) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:07:36,640] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:07:36,641] {logging_mixin.py:115} INFO - [2022-10-01 18:07:36,641] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:07:37,440] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:07:37,481] {logging_mixin.py:115} INFO - [2022-10-01 18:07:37,480] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:07:37,521] {logging_mixin.py:115} INFO - [2022-10-01 18:07:37,521] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:07:37,541] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.908 seconds
+[2022-10-01 18:08:08,293] {processor.py:153} INFO - Started process (PID=4376) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:08:08,295] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:08:08,299] {logging_mixin.py:115} INFO - [2022-10-01 18:08:08,299] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:08:08,734] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:08:08,762] {logging_mixin.py:115} INFO - [2022-10-01 18:08:08,761] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:08:08,790] {logging_mixin.py:115} INFO - [2022-10-01 18:08:08,790] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:08:08,806] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.518 seconds
+[2022-10-01 18:08:39,055] {processor.py:153} INFO - Started process (PID=4440) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:08:39,056] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:08:39,058] {logging_mixin.py:115} INFO - [2022-10-01 18:08:39,058] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:08:39,517] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:08:39,548] {logging_mixin.py:115} INFO - [2022-10-01 18:08:39,547] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:08:39,577] {logging_mixin.py:115} INFO - [2022-10-01 18:08:39,577] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:08:39,594] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.544 seconds
+[2022-10-01 18:09:10,093] {processor.py:153} INFO - Started process (PID=4496) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:09:10,099] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:09:10,101] {logging_mixin.py:115} INFO - [2022-10-01 18:09:10,101] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:09:10,879] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:09:10,920] {logging_mixin.py:115} INFO - [2022-10-01 18:09:10,919] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:09:10,951] {logging_mixin.py:115} INFO - [2022-10-01 18:09:10,950] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:09:10,967] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.878 seconds
+[2022-10-01 18:09:41,556] {processor.py:153} INFO - Started process (PID=4559) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:09:41,558] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:09:41,559] {logging_mixin.py:115} INFO - [2022-10-01 18:09:41,559] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:09:42,059] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:09:42,089] {logging_mixin.py:115} INFO - [2022-10-01 18:09:42,088] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:09:42,114] {logging_mixin.py:115} INFO - [2022-10-01 18:09:42,114] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:09:42,128] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.576 seconds
+[2022-10-01 18:09:50,863] {processor.py:153} INFO - Started process (PID=4587) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:09:50,866] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:09:50,869] {logging_mixin.py:115} INFO - [2022-10-01 18:09:50,869] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:09:51,533] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:09:51,577] {logging_mixin.py:115} INFO - [2022-10-01 18:09:51,575] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:09:51,621] {logging_mixin.py:115} INFO - [2022-10-01 18:09:51,621] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:09:51,648] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.795 seconds
+[2022-10-01 18:10:22,150] {processor.py:153} INFO - Started process (PID=4642) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:10:22,152] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:10:22,154] {logging_mixin.py:115} INFO - [2022-10-01 18:10:22,153] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:10:22,670] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:10:22,698] {logging_mixin.py:115} INFO - [2022-10-01 18:10:22,697] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:10:22,730] {logging_mixin.py:115} INFO - [2022-10-01 18:10:22,730] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:10:22,754] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.610 seconds
+[2022-10-01 18:10:44,297] {processor.py:153} INFO - Started process (PID=4683) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:10:44,303] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:10:44,306] {logging_mixin.py:115} INFO - [2022-10-01 18:10:44,306] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:10:45,504] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:10:45,561] {logging_mixin.py:115} INFO - [2022-10-01 18:10:45,559] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:10:45,627] {logging_mixin.py:115} INFO - [2022-10-01 18:10:45,627] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:10:45,670] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.383 seconds
+[2022-10-01 18:11:17,600] {processor.py:153} INFO - Started process (PID=4746) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:11:17,605] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:11:17,608] {logging_mixin.py:115} INFO - [2022-10-01 18:11:17,607] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:11:19,848] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:11:19,915] {logging_mixin.py:115} INFO - [2022-10-01 18:11:19,914] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:11:19,973] {logging_mixin.py:115} INFO - [2022-10-01 18:11:19,973] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:11:20,027] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 2.445 seconds
+[2022-10-01 18:11:50,450] {processor.py:153} INFO - Started process (PID=4804) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:11:50,451] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:11:50,453] {logging_mixin.py:115} INFO - [2022-10-01 18:11:50,453] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:11:50,839] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:11:50,863] {logging_mixin.py:115} INFO - [2022-10-01 18:11:50,862] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:11:50,886] {logging_mixin.py:115} INFO - [2022-10-01 18:11:50,886] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:11:50,900] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.454 seconds
+[2022-10-01 18:12:20,995] {processor.py:153} INFO - Started process (PID=4870) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:12:20,996] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:12:20,998] {logging_mixin.py:115} INFO - [2022-10-01 18:12:20,998] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:12:21,550] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:12:21,575] {logging_mixin.py:115} INFO - [2022-10-01 18:12:21,575] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:12:21,602] {logging_mixin.py:115} INFO - [2022-10-01 18:12:21,602] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:12:21,618] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.630 seconds
+[2022-10-01 18:12:51,706] {processor.py:153} INFO - Started process (PID=4926) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:12:51,708] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:12:51,710] {logging_mixin.py:115} INFO - [2022-10-01 18:12:51,710] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:12:52,435] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:12:52,477] {logging_mixin.py:115} INFO - [2022-10-01 18:12:52,476] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:12:52,508] {logging_mixin.py:115} INFO - [2022-10-01 18:12:52,508] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:12:52,526] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.827 seconds
+[2022-10-01 18:12:58,267] {processor.py:153} INFO - Started process (PID=4945) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:12:58,269] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:12:58,271] {logging_mixin.py:115} INFO - [2022-10-01 18:12:58,271] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:12:58,926] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:12:58,967] {logging_mixin.py:115} INFO - [2022-10-01 18:12:58,966] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:12:59,013] {logging_mixin.py:115} INFO - [2022-10-01 18:12:59,013] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:12:59,048] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.787 seconds
+[2022-10-01 18:12:59,524] {processor.py:153} INFO - Started process (PID=4952) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:12:59,526] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:12:59,528] {logging_mixin.py:115} INFO - [2022-10-01 18:12:59,528] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:13:00,374] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:13:00,409] {logging_mixin.py:115} INFO - [2022-10-01 18:13:00,408] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:13:00,441] {logging_mixin.py:115} INFO - [2022-10-01 18:13:00,441] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:13:00,496] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.979 seconds
+[2022-10-01 18:13:10,382] {processor.py:153} INFO - Started process (PID=4972) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:13:10,385] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:13:10,388] {logging_mixin.py:115} INFO - [2022-10-01 18:13:10,387] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:13:11,163] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:13:11,195] {logging_mixin.py:115} INFO - [2022-10-01 18:13:11,194] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:13:11,228] {logging_mixin.py:115} INFO - [2022-10-01 18:13:11,228] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:13:11,254] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.881 seconds
+[2022-10-01 18:13:20,979] {processor.py:153} INFO - Started process (PID=4991) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:13:20,981] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:13:20,983] {logging_mixin.py:115} INFO - [2022-10-01 18:13:20,983] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:13:21,766] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:13:21,817] {logging_mixin.py:115} INFO - [2022-10-01 18:13:21,816] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:13:21,856] {logging_mixin.py:115} INFO - [2022-10-01 18:13:21,856] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:13:21,886] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.914 seconds
+[2022-10-01 18:13:52,155] {processor.py:153} INFO - Started process (PID=5047) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:13:52,157] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:13:52,160] {logging_mixin.py:115} INFO - [2022-10-01 18:13:52,159] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:13:52,716] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:13:52,757] {logging_mixin.py:115} INFO - [2022-10-01 18:13:52,756] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:13:52,792] {logging_mixin.py:115} INFO - [2022-10-01 18:13:52,792] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:13:52,808] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.659 seconds
+[2022-10-01 18:14:23,032] {processor.py:153} INFO - Started process (PID=5107) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:14:23,035] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:14:23,038] {logging_mixin.py:115} INFO - [2022-10-01 18:14:23,038] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:14:24,744] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:14:24,814] {logging_mixin.py:115} INFO - [2022-10-01 18:14:24,813] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:14:25,081] {logging_mixin.py:115} INFO - [2022-10-01 18:14:25,080] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:14:25,189] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 2.166 seconds
+[2022-10-01 18:14:53,639] {processor.py:153} INFO - Started process (PID=5163) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:14:53,642] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:14:53,644] {logging_mixin.py:115} INFO - [2022-10-01 18:14:53,644] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:14:54,293] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:14:54,330] {logging_mixin.py:115} INFO - [2022-10-01 18:14:54,329] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:14:54,370] {logging_mixin.py:115} INFO - [2022-10-01 18:14:54,370] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:14:54,406] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.776 seconds
+[2022-10-01 18:15:25,077] {processor.py:153} INFO - Started process (PID=5218) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:15:25,080] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:15:25,082] {logging_mixin.py:115} INFO - [2022-10-01 18:15:25,081] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:15:25,646] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:15:25,680] {logging_mixin.py:115} INFO - [2022-10-01 18:15:25,679] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:15:25,709] {logging_mixin.py:115} INFO - [2022-10-01 18:15:25,708] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:15:25,735] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.666 seconds
+[2022-10-01 18:15:56,621] {processor.py:153} INFO - Started process (PID=5283) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:15:56,624] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:15:56,627] {logging_mixin.py:115} INFO - [2022-10-01 18:15:56,626] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:15:57,385] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:15:57,423] {logging_mixin.py:115} INFO - [2022-10-01 18:15:57,422] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:15:57,457] {logging_mixin.py:115} INFO - [2022-10-01 18:15:57,457] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:15:57,473] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.872 seconds
+[2022-10-01 18:16:17,283] {processor.py:153} INFO - Started process (PID=5326) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:16:17,285] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:16:17,287] {logging_mixin.py:115} INFO - [2022-10-01 18:16:17,286] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:16:18,235] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:16:18,274] {logging_mixin.py:115} INFO - [2022-10-01 18:16:18,274] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:16:18,310] {logging_mixin.py:115} INFO - [2022-10-01 18:16:18,310] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:16:18,337] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.062 seconds
+[2022-10-01 18:16:48,957] {processor.py:153} INFO - Started process (PID=5380) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:16:48,959] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:16:48,961] {logging_mixin.py:115} INFO - [2022-10-01 18:16:48,961] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:16:49,795] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:16:49,859] {logging_mixin.py:115} INFO - [2022-10-01 18:16:49,858] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:16:49,929] {logging_mixin.py:115} INFO - [2022-10-01 18:16:49,929] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:16:49,985] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.033 seconds
+[2022-10-01 18:17:20,322] {processor.py:153} INFO - Started process (PID=5441) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:17:20,326] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:17:20,330] {logging_mixin.py:115} INFO - [2022-10-01 18:17:20,330] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:17:21,400] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:17:21,448] {logging_mixin.py:115} INFO - [2022-10-01 18:17:21,447] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:17:21,531] {logging_mixin.py:115} INFO - [2022-10-01 18:17:21,531] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:17:21,577] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.268 seconds
+[2022-10-01 18:17:51,976] {processor.py:153} INFO - Started process (PID=5497) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:17:51,977] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:17:51,979] {logging_mixin.py:115} INFO - [2022-10-01 18:17:51,979] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:17:52,400] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:17:52,426] {logging_mixin.py:115} INFO - [2022-10-01 18:17:52,426] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:17:52,459] {logging_mixin.py:115} INFO - [2022-10-01 18:17:52,459] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:17:52,491] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.520 seconds
+[2022-10-01 18:18:22,621] {processor.py:153} INFO - Started process (PID=5560) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:18:22,623] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:18:22,626] {logging_mixin.py:115} INFO - [2022-10-01 18:18:22,626] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:18:23,146] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:18:23,176] {logging_mixin.py:115} INFO - [2022-10-01 18:18:23,176] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:18:23,206] {logging_mixin.py:115} INFO - [2022-10-01 18:18:23,206] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:18:23,226] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.613 seconds
+[2022-10-01 18:18:54,245] {processor.py:153} INFO - Started process (PID=5614) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:18:54,247] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:18:54,249] {logging_mixin.py:115} INFO - [2022-10-01 18:18:54,249] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:18:55,152] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:18:55,220] {logging_mixin.py:115} INFO - [2022-10-01 18:18:55,219] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:18:55,316] {logging_mixin.py:115} INFO - [2022-10-01 18:18:55,315] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:18:55,354] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.118 seconds
+[2022-10-01 18:19:25,489] {processor.py:153} INFO - Started process (PID=5678) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:19:25,491] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:19:25,493] {logging_mixin.py:115} INFO - [2022-10-01 18:19:25,493] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:19:25,937] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:19:25,966] {logging_mixin.py:115} INFO - [2022-10-01 18:19:25,965] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:19:25,993] {logging_mixin.py:115} INFO - [2022-10-01 18:19:25,993] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:19:26,009] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.526 seconds
+[2022-10-01 18:19:56,169] {processor.py:153} INFO - Started process (PID=5732) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:19:56,170] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:19:56,172] {logging_mixin.py:115} INFO - [2022-10-01 18:19:56,172] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:19:56,674] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:19:56,707] {logging_mixin.py:115} INFO - [2022-10-01 18:19:56,706] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:19:56,738] {logging_mixin.py:115} INFO - [2022-10-01 18:19:56,738] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:19:56,753] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.588 seconds
+[2022-10-01 18:20:27,025] {processor.py:153} INFO - Started process (PID=5797) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:20:27,027] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:20:27,029] {logging_mixin.py:115} INFO - [2022-10-01 18:20:27,029] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:20:27,444] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:20:27,467] {logging_mixin.py:115} INFO - [2022-10-01 18:20:27,467] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:20:27,489] {logging_mixin.py:115} INFO - [2022-10-01 18:20:27,489] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:20:27,501] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.484 seconds
+[2022-10-01 18:20:57,913] {processor.py:153} INFO - Started process (PID=5859) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:20:57,914] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:20:57,916] {logging_mixin.py:115} INFO - [2022-10-01 18:20:57,916] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:20:58,512] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:20:58,543] {logging_mixin.py:115} INFO - [2022-10-01 18:20:58,542] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:20:58,572] {logging_mixin.py:115} INFO - [2022-10-01 18:20:58,572] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:20:58,589] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.683 seconds
+[2022-10-01 18:21:28,786] {processor.py:153} INFO - Started process (PID=5915) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:21:28,788] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:21:28,789] {logging_mixin.py:115} INFO - [2022-10-01 18:21:28,789] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:21:29,473] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:21:29,519] {logging_mixin.py:115} INFO - [2022-10-01 18:21:29,518] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:21:29,569] {logging_mixin.py:115} INFO - [2022-10-01 18:21:29,569] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:21:29,620] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.839 seconds
+[2022-10-01 18:21:59,831] {processor.py:153} INFO - Started process (PID=5977) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:21:59,833] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:21:59,834] {logging_mixin.py:115} INFO - [2022-10-01 18:21:59,834] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:22:00,484] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:22:00,524] {logging_mixin.py:115} INFO - [2022-10-01 18:22:00,523] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:22:00,563] {logging_mixin.py:115} INFO - [2022-10-01 18:22:00,563] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:22:00,587] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.762 seconds
+[2022-10-01 18:22:31,152] {processor.py:153} INFO - Started process (PID=6031) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:22:31,154] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:22:31,155] {logging_mixin.py:115} INFO - [2022-10-01 18:22:31,155] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:22:31,863] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:22:31,909] {logging_mixin.py:115} INFO - [2022-10-01 18:22:31,908] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:22:31,959] {logging_mixin.py:115} INFO - [2022-10-01 18:22:31,959] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:22:32,000] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.853 seconds
+[2022-10-01 18:23:02,343] {processor.py:153} INFO - Started process (PID=6096) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:23:02,344] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:23:02,345] {logging_mixin.py:115} INFO - [2022-10-01 18:23:02,345] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:23:02,790] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:23:02,819] {logging_mixin.py:115} INFO - [2022-10-01 18:23:02,819] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:23:02,846] {logging_mixin.py:115} INFO - [2022-10-01 18:23:02,846] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:23:02,862] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.524 seconds
+[2022-10-01 18:23:33,172] {processor.py:153} INFO - Started process (PID=6149) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:23:33,173] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:23:33,175] {logging_mixin.py:115} INFO - [2022-10-01 18:23:33,175] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:23:33,696] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:23:33,727] {logging_mixin.py:115} INFO - [2022-10-01 18:23:33,726] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:23:33,764] {logging_mixin.py:115} INFO - [2022-10-01 18:23:33,763] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:23:33,803] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.636 seconds
+[2022-10-01 18:24:03,882] {processor.py:153} INFO - Started process (PID=6213) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:24:03,884] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:24:03,886] {logging_mixin.py:115} INFO - [2022-10-01 18:24:03,886] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:24:04,617] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:24:04,670] {logging_mixin.py:115} INFO - [2022-10-01 18:24:04,669] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:24:04,715] {logging_mixin.py:115} INFO - [2022-10-01 18:24:04,715] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:24:04,746] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.871 seconds
+[2022-10-01 18:24:35,050] {processor.py:153} INFO - Started process (PID=6270) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:24:35,051] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:24:35,053] {logging_mixin.py:115} INFO - [2022-10-01 18:24:35,053] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:24:35,975] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:24:36,036] {logging_mixin.py:115} INFO - [2022-10-01 18:24:36,035] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:24:36,088] {logging_mixin.py:115} INFO - [2022-10-01 18:24:36,087] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:24:36,130] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.090 seconds
+[2022-10-01 18:25:06,463] {processor.py:153} INFO - Started process (PID=6335) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:25:06,464] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:25:06,466] {logging_mixin.py:115} INFO - [2022-10-01 18:25:06,465] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:25:06,976] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:25:07,005] {logging_mixin.py:115} INFO - [2022-10-01 18:25:07,004] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:25:07,036] {logging_mixin.py:115} INFO - [2022-10-01 18:25:07,036] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:25:07,060] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.604 seconds
+[2022-10-01 18:25:37,322] {processor.py:153} INFO - Started process (PID=6398) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:25:37,323] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:25:37,325] {logging_mixin.py:115} INFO - [2022-10-01 18:25:37,325] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:25:37,906] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:25:37,940] {logging_mixin.py:115} INFO - [2022-10-01 18:25:37,940] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:25:37,973] {logging_mixin.py:115} INFO - [2022-10-01 18:25:37,973] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:25:38,002] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.686 seconds
+[2022-10-01 18:26:08,104] {processor.py:153} INFO - Started process (PID=6455) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:26:08,105] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:26:08,106] {logging_mixin.py:115} INFO - [2022-10-01 18:26:08,106] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:26:08,568] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:26:08,606] {logging_mixin.py:115} INFO - [2022-10-01 18:26:08,605] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:26:08,654] {logging_mixin.py:115} INFO - [2022-10-01 18:26:08,654] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:26:08,673] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.574 seconds
+[2022-10-01 18:26:38,877] {processor.py:153} INFO - Started process (PID=6520) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:26:38,879] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:26:38,881] {logging_mixin.py:115} INFO - [2022-10-01 18:26:38,881] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:26:39,568] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:26:39,622] {logging_mixin.py:115} INFO - [2022-10-01 18:26:39,621] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:26:39,660] {logging_mixin.py:115} INFO - [2022-10-01 18:26:39,660] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:26:39,686] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.815 seconds
+[2022-10-01 18:27:09,839] {processor.py:153} INFO - Started process (PID=6574) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:27:09,841] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:27:09,842] {logging_mixin.py:115} INFO - [2022-10-01 18:27:09,842] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:27:10,409] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:27:10,435] {logging_mixin.py:115} INFO - [2022-10-01 18:27:10,435] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:27:10,459] {logging_mixin.py:115} INFO - [2022-10-01 18:27:10,458] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:27:10,476] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.641 seconds
+[2022-10-01 18:27:40,614] {processor.py:153} INFO - Started process (PID=6641) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:27:40,617] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:27:40,619] {logging_mixin.py:115} INFO - [2022-10-01 18:27:40,619] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:27:41,031] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:27:41,055] {logging_mixin.py:115} INFO - [2022-10-01 18:27:41,055] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:27:41,080] {logging_mixin.py:115} INFO - [2022-10-01 18:27:41,079] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:27:41,097] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.489 seconds
+[2022-10-01 18:28:11,506] {processor.py:153} INFO - Started process (PID=6705) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:28:11,508] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:28:11,510] {logging_mixin.py:115} INFO - [2022-10-01 18:28:11,510] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:28:12,069] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:28:12,096] {logging_mixin.py:115} INFO - [2022-10-01 18:28:12,095] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:28:12,121] {logging_mixin.py:115} INFO - [2022-10-01 18:28:12,121] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:28:12,139] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.658 seconds
+[2022-10-01 18:28:42,297] {processor.py:153} INFO - Started process (PID=6758) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:28:42,298] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:28:42,299] {logging_mixin.py:115} INFO - [2022-10-01 18:28:42,299] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:28:42,786] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:28:42,818] {logging_mixin.py:115} INFO - [2022-10-01 18:28:42,817] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:28:42,857] {logging_mixin.py:115} INFO - [2022-10-01 18:28:42,857] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:28:42,878] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.587 seconds
+[2022-10-01 18:29:13,911] {processor.py:153} INFO - Started process (PID=6823) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:29:13,913] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:29:13,914] {logging_mixin.py:115} INFO - [2022-10-01 18:29:13,914] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:29:14,380] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:29:14,408] {logging_mixin.py:115} INFO - [2022-10-01 18:29:14,407] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:29:14,438] {logging_mixin.py:115} INFO - [2022-10-01 18:29:14,438] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:29:14,453] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.546 seconds
+[2022-10-01 18:29:44,626] {processor.py:153} INFO - Started process (PID=6886) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:29:44,628] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:29:44,630] {logging_mixin.py:115} INFO - [2022-10-01 18:29:44,630] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:29:45,364] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:29:45,407] {logging_mixin.py:115} INFO - [2022-10-01 18:29:45,406] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:29:45,460] {logging_mixin.py:115} INFO - [2022-10-01 18:29:45,460] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:29:45,507] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.887 seconds
+[2022-10-01 18:30:16,110] {processor.py:153} INFO - Started process (PID=6943) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:30:16,113] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:30:16,117] {logging_mixin.py:115} INFO - [2022-10-01 18:30:16,116] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:30:16,712] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:30:16,744] {logging_mixin.py:115} INFO - [2022-10-01 18:30:16,744] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:30:16,786] {logging_mixin.py:115} INFO - [2022-10-01 18:30:16,786] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:30:16,810] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.708 seconds
+[2022-10-01 18:30:47,622] {processor.py:153} INFO - Started process (PID=6997) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:30:47,624] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:30:47,625] {logging_mixin.py:115} INFO - [2022-10-01 18:30:47,625] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:30:48,034] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:30:48,059] {logging_mixin.py:115} INFO - [2022-10-01 18:30:48,058] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:30:48,084] {logging_mixin.py:115} INFO - [2022-10-01 18:30:48,084] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:30:48,099] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.481 seconds
+[2022-10-01 18:31:18,201] {processor.py:153} INFO - Started process (PID=7061) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:31:18,202] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:31:18,204] {logging_mixin.py:115} INFO - [2022-10-01 18:31:18,204] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:31:18,591] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:31:18,616] {logging_mixin.py:115} INFO - [2022-10-01 18:31:18,615] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:31:18,643] {logging_mixin.py:115} INFO - [2022-10-01 18:31:18,643] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:31:18,657] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.460 seconds
+[2022-10-01 18:31:48,958] {processor.py:153} INFO - Started process (PID=7125) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:31:48,960] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:31:48,962] {logging_mixin.py:115} INFO - [2022-10-01 18:31:48,961] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:31:49,540] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:31:49,587] {logging_mixin.py:115} INFO - [2022-10-01 18:31:49,586] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:31:49,645] {logging_mixin.py:115} INFO - [2022-10-01 18:31:49,645] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:31:49,670] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.720 seconds
+[2022-10-01 18:32:20,197] {processor.py:153} INFO - Started process (PID=7180) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:32:20,198] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:32:20,199] {logging_mixin.py:115} INFO - [2022-10-01 18:32:20,199] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:32:20,597] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:32:20,620] {logging_mixin.py:115} INFO - [2022-10-01 18:32:20,619] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:32:20,644] {logging_mixin.py:115} INFO - [2022-10-01 18:32:20,644] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:32:20,669] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.476 seconds
+[2022-10-01 18:32:50,862] {processor.py:153} INFO - Started process (PID=7243) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:32:50,864] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:32:50,866] {logging_mixin.py:115} INFO - [2022-10-01 18:32:50,866] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:32:51,349] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:32:51,379] {logging_mixin.py:115} INFO - [2022-10-01 18:32:51,377] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:32:51,412] {logging_mixin.py:115} INFO - [2022-10-01 18:32:51,412] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:32:51,426] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.571 seconds
+[2022-10-01 18:33:21,607] {processor.py:153} INFO - Started process (PID=7297) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:33:21,609] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:33:21,610] {logging_mixin.py:115} INFO - [2022-10-01 18:33:21,610] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:33:22,107] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:33:22,133] {logging_mixin.py:115} INFO - [2022-10-01 18:33:22,132] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:33:22,161] {logging_mixin.py:115} INFO - [2022-10-01 18:33:22,161] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:33:22,176] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.574 seconds
+[2022-10-01 18:33:52,800] {processor.py:153} INFO - Started process (PID=7361) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:33:52,802] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:33:52,805] {logging_mixin.py:115} INFO - [2022-10-01 18:33:52,804] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:33:53,404] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:33:53,436] {logging_mixin.py:115} INFO - [2022-10-01 18:33:53,435] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:33:53,470] {logging_mixin.py:115} INFO - [2022-10-01 18:33:53,470] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:33:53,495] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.700 seconds
+[2022-10-01 18:34:24,243] {processor.py:153} INFO - Started process (PID=7423) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:34:24,245] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:34:24,246] {logging_mixin.py:115} INFO - [2022-10-01 18:34:24,246] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:34:24,787] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:34:24,819] {logging_mixin.py:115} INFO - [2022-10-01 18:34:24,819] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:34:24,845] {logging_mixin.py:115} INFO - [2022-10-01 18:34:24,845] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:34:24,891] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.653 seconds
+[2022-10-01 18:34:55,346] {processor.py:153} INFO - Started process (PID=7479) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:34:55,348] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:34:55,350] {logging_mixin.py:115} INFO - [2022-10-01 18:34:55,349] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:34:56,182] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:34:56,234] {logging_mixin.py:115} INFO - [2022-10-01 18:34:56,233] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:34:56,279] {logging_mixin.py:115} INFO - [2022-10-01 18:34:56,279] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:34:56,318] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.977 seconds
+[2022-10-01 18:35:26,739] {processor.py:153} INFO - Started process (PID=7543) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:35:26,741] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:35:26,743] {logging_mixin.py:115} INFO - [2022-10-01 18:35:26,743] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:35:27,145] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:35:27,173] {logging_mixin.py:115} INFO - [2022-10-01 18:35:27,172] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:35:27,196] {logging_mixin.py:115} INFO - [2022-10-01 18:35:27,196] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:35:27,212] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.480 seconds
+[2022-10-01 18:35:57,418] {processor.py:153} INFO - Started process (PID=7598) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:35:57,421] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:35:57,423] {logging_mixin.py:115} INFO - [2022-10-01 18:35:57,422] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:35:57,810] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:35:57,833] {logging_mixin.py:115} INFO - [2022-10-01 18:35:57,832] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:35:57,858] {logging_mixin.py:115} INFO - [2022-10-01 18:35:57,858] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:35:57,875] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.463 seconds
+[2022-10-01 18:36:28,000] {processor.py:153} INFO - Started process (PID=7661) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:36:28,002] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:36:28,003] {logging_mixin.py:115} INFO - [2022-10-01 18:36:28,003] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:36:28,413] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:36:28,448] {logging_mixin.py:115} INFO - [2022-10-01 18:36:28,448] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:36:28,474] {logging_mixin.py:115} INFO - [2022-10-01 18:36:28,474] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:36:28,502] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.507 seconds
+[2022-10-01 18:36:59,326] {processor.py:153} INFO - Started process (PID=7715) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:36:59,328] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:36:59,329] {logging_mixin.py:115} INFO - [2022-10-01 18:36:59,329] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:36:59,827] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:36:59,851] {logging_mixin.py:115} INFO - [2022-10-01 18:36:59,850] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:36:59,875] {logging_mixin.py:115} INFO - [2022-10-01 18:36:59,875] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:36:59,889] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.568 seconds
+[2022-10-01 18:37:30,119] {processor.py:153} INFO - Started process (PID=7780) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:37:30,121] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:37:30,123] {logging_mixin.py:115} INFO - [2022-10-01 18:37:30,123] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:37:30,721] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:37:30,752] {logging_mixin.py:115} INFO - [2022-10-01 18:37:30,751] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:37:30,784] {logging_mixin.py:115} INFO - [2022-10-01 18:37:30,784] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:37:30,799] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.687 seconds
+[2022-10-01 18:38:01,046] {processor.py:153} INFO - Started process (PID=7834) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:38:01,048] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:38:01,049] {logging_mixin.py:115} INFO - [2022-10-01 18:38:01,049] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:38:01,464] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:38:01,489] {logging_mixin.py:115} INFO - [2022-10-01 18:38:01,489] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:38:01,513] {logging_mixin.py:115} INFO - [2022-10-01 18:38:01,512] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:38:01,528] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.485 seconds
+[2022-10-01 18:38:31,881] {processor.py:153} INFO - Started process (PID=7897) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:38:31,884] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:38:31,886] {logging_mixin.py:115} INFO - [2022-10-01 18:38:31,886] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:38:32,540] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:38:32,570] {logging_mixin.py:115} INFO - [2022-10-01 18:38:32,569] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:38:32,599] {logging_mixin.py:115} INFO - [2022-10-01 18:38:32,598] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:38:32,615] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.739 seconds
+[2022-10-01 18:39:03,224] {processor.py:153} INFO - Started process (PID=7951) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:39:03,225] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:39:03,229] {logging_mixin.py:115} INFO - [2022-10-01 18:39:03,229] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:39:03,707] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:39:03,736] {logging_mixin.py:115} INFO - [2022-10-01 18:39:03,736] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:39:03,758] {logging_mixin.py:115} INFO - [2022-10-01 18:39:03,758] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:39:03,773] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.555 seconds
+[2022-10-01 18:39:34,460] {processor.py:153} INFO - Started process (PID=8014) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:39:34,462] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:39:34,464] {logging_mixin.py:115} INFO - [2022-10-01 18:39:34,464] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:39:35,005] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:39:35,045] {logging_mixin.py:115} INFO - [2022-10-01 18:39:35,044] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:39:35,083] {logging_mixin.py:115} INFO - [2022-10-01 18:39:35,082] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:39:35,106] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.652 seconds
+[2022-10-01 18:40:05,266] {processor.py:153} INFO - Started process (PID=8079) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:40:05,268] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:40:05,269] {logging_mixin.py:115} INFO - [2022-10-01 18:40:05,269] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:40:05,781] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:40:05,803] {logging_mixin.py:115} INFO - [2022-10-01 18:40:05,803] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:40:05,832] {logging_mixin.py:115} INFO - [2022-10-01 18:40:05,832] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:40:05,856] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.594 seconds
+[2022-10-01 18:40:36,531] {processor.py:153} INFO - Started process (PID=8140) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:40:36,533] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:40:36,534] {logging_mixin.py:115} INFO - [2022-10-01 18:40:36,534] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:40:36,957] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:40:36,979] {logging_mixin.py:115} INFO - [2022-10-01 18:40:36,979] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:40:37,002] {logging_mixin.py:115} INFO - [2022-10-01 18:40:37,002] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:40:37,020] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.496 seconds
+[2022-10-01 18:41:07,217] {processor.py:153} INFO - Started process (PID=8196) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:41:07,218] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:41:07,220] {logging_mixin.py:115} INFO - [2022-10-01 18:41:07,220] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:41:07,786] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:41:07,821] {logging_mixin.py:115} INFO - [2022-10-01 18:41:07,820] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:41:07,852] {logging_mixin.py:115} INFO - [2022-10-01 18:41:07,852] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:41:07,871] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.659 seconds
+[2022-10-01 18:41:38,203] {processor.py:153} INFO - Started process (PID=8259) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:41:38,204] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:41:38,206] {logging_mixin.py:115} INFO - [2022-10-01 18:41:38,205] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:41:38,609] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:41:38,634] {logging_mixin.py:115} INFO - [2022-10-01 18:41:38,634] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:41:38,658] {logging_mixin.py:115} INFO - [2022-10-01 18:41:38,658] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:41:38,671] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.473 seconds
+[2022-10-01 18:42:09,445] {processor.py:153} INFO - Started process (PID=8313) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:42:09,446] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:42:09,447] {logging_mixin.py:115} INFO - [2022-10-01 18:42:09,447] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:42:10,043] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:42:10,075] {logging_mixin.py:115} INFO - [2022-10-01 18:42:10,074] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:42:10,110] {logging_mixin.py:115} INFO - [2022-10-01 18:42:10,110] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:42:10,133] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.693 seconds
+[2022-10-01 18:42:40,427] {processor.py:153} INFO - Started process (PID=8377) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:42:40,429] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:42:40,431] {logging_mixin.py:115} INFO - [2022-10-01 18:42:40,430] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:42:41,058] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:42:41,108] {logging_mixin.py:115} INFO - [2022-10-01 18:42:41,107] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:42:41,146] {logging_mixin.py:115} INFO - [2022-10-01 18:42:41,146] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:42:41,170] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.752 seconds
+[2022-10-01 18:43:11,388] {processor.py:153} INFO - Started process (PID=8442) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:43:11,389] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:43:11,390] {logging_mixin.py:115} INFO - [2022-10-01 18:43:11,390] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:43:11,784] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:43:11,809] {logging_mixin.py:115} INFO - [2022-10-01 18:43:11,808] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:43:11,835] {logging_mixin.py:115} INFO - [2022-10-01 18:43:11,834] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:43:11,867] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.483 seconds
+[2022-10-01 18:43:42,746] {processor.py:153} INFO - Started process (PID=8504) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:43:42,750] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:43:42,751] {logging_mixin.py:115} INFO - [2022-10-01 18:43:42,751] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:43:43,285] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:43:43,312] {logging_mixin.py:115} INFO - [2022-10-01 18:43:43,311] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:43:43,346] {logging_mixin.py:115} INFO - [2022-10-01 18:43:43,345] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:43:43,360] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.621 seconds
+[2022-10-01 18:44:14,155] {processor.py:153} INFO - Started process (PID=8562) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:44:14,157] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:44:14,158] {logging_mixin.py:115} INFO - [2022-10-01 18:44:14,158] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:44:14,762] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:44:14,795] {logging_mixin.py:115} INFO - [2022-10-01 18:44:14,793] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:44:14,848] {logging_mixin.py:115} INFO - [2022-10-01 18:44:14,847] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:44:14,878] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.728 seconds
+[2022-10-01 18:44:45,732] {processor.py:153} INFO - Started process (PID=8630) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:44:45,734] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:44:45,736] {logging_mixin.py:115} INFO - [2022-10-01 18:44:45,736] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:44:46,140] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:44:46,167] {logging_mixin.py:115} INFO - [2022-10-01 18:44:46,167] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:44:46,190] {logging_mixin.py:115} INFO - [2022-10-01 18:44:46,190] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:44:46,205] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.484 seconds
+[2022-10-01 18:45:16,519] {processor.py:153} INFO - Started process (PID=8694) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:45:16,521] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:45:16,522] {logging_mixin.py:115} INFO - [2022-10-01 18:45:16,522] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:45:17,119] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:45:17,142] {logging_mixin.py:115} INFO - [2022-10-01 18:45:17,142] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:45:17,166] {logging_mixin.py:115} INFO - [2022-10-01 18:45:17,165] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:45:17,177] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.670 seconds
+[2022-10-01 18:45:48,018] {processor.py:153} INFO - Started process (PID=8749) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:45:48,020] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:45:48,021] {logging_mixin.py:115} INFO - [2022-10-01 18:45:48,021] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:45:48,401] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:45:48,424] {logging_mixin.py:115} INFO - [2022-10-01 18:45:48,423] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:45:48,450] {logging_mixin.py:115} INFO - [2022-10-01 18:45:48,450] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:45:48,471] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.457 seconds
+[2022-10-01 18:46:19,306] {processor.py:153} INFO - Started process (PID=8813) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:46:19,307] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:46:19,308] {logging_mixin.py:115} INFO - [2022-10-01 18:46:19,308] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:46:19,777] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:46:19,807] {logging_mixin.py:115} INFO - [2022-10-01 18:46:19,807] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:46:19,832] {logging_mixin.py:115} INFO - [2022-10-01 18:46:19,832] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:46:19,849] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.547 seconds
+[2022-10-01 18:46:50,693] {processor.py:153} INFO - Started process (PID=8877) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:46:50,694] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:46:50,696] {logging_mixin.py:115} INFO - [2022-10-01 18:46:50,695] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:46:51,112] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:46:51,136] {logging_mixin.py:115} INFO - [2022-10-01 18:46:51,135] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:46:51,161] {logging_mixin.py:115} INFO - [2022-10-01 18:46:51,161] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:46:51,175] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.486 seconds
+[2022-10-01 18:47:22,007] {processor.py:153} INFO - Started process (PID=8932) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:47:22,008] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:47:22,009] {logging_mixin.py:115} INFO - [2022-10-01 18:47:22,009] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:47:22,417] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:47:22,442] {logging_mixin.py:115} INFO - [2022-10-01 18:47:22,441] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:47:22,469] {logging_mixin.py:115} INFO - [2022-10-01 18:47:22,469] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:47:22,483] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.480 seconds
+[2022-10-01 18:47:52,734] {processor.py:153} INFO - Started process (PID=8996) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:47:52,736] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:47:52,737] {logging_mixin.py:115} INFO - [2022-10-01 18:47:52,737] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:47:53,181] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:47:53,217] {logging_mixin.py:115} INFO - [2022-10-01 18:47:53,216] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:47:53,245] {logging_mixin.py:115} INFO - [2022-10-01 18:47:53,245] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:47:53,262] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.534 seconds
+[2022-10-01 18:48:24,086] {processor.py:153} INFO - Started process (PID=9060) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:48:24,088] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:48:24,090] {logging_mixin.py:115} INFO - [2022-10-01 18:48:24,090] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:48:24,482] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:48:24,510] {logging_mixin.py:115} INFO - [2022-10-01 18:48:24,509] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:48:24,533] {logging_mixin.py:115} INFO - [2022-10-01 18:48:24,533] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:48:24,569] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.487 seconds
+[2022-10-01 18:48:54,663] {processor.py:153} INFO - Started process (PID=9115) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:48:54,665] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:48:54,666] {logging_mixin.py:115} INFO - [2022-10-01 18:48:54,666] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:48:55,157] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:48:55,185] {logging_mixin.py:115} INFO - [2022-10-01 18:48:55,184] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:48:55,213] {logging_mixin.py:115} INFO - [2022-10-01 18:48:55,212] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:48:55,230] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.573 seconds
+[2022-10-01 18:49:25,650] {processor.py:153} INFO - Started process (PID=9178) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:49:25,652] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:49:25,653] {logging_mixin.py:115} INFO - [2022-10-01 18:49:25,653] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:49:26,257] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:49:26,285] {logging_mixin.py:115} INFO - [2022-10-01 18:49:26,285] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:49:26,324] {logging_mixin.py:115} INFO - [2022-10-01 18:49:26,324] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:49:26,348] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.704 seconds
+[2022-10-01 18:49:56,998] {processor.py:153} INFO - Started process (PID=9242) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:49:56,999] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:49:57,001] {logging_mixin.py:115} INFO - [2022-10-01 18:49:57,001] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:49:57,424] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:49:57,449] {logging_mixin.py:115} INFO - [2022-10-01 18:49:57,448] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:49:57,476] {logging_mixin.py:115} INFO - [2022-10-01 18:49:57,476] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:49:57,491] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.497 seconds
+[2022-10-01 18:50:27,570] {processor.py:153} INFO - Started process (PID=9298) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:50:27,571] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:50:27,574] {logging_mixin.py:115} INFO - [2022-10-01 18:50:27,574] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:50:28,338] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:50:28,384] {logging_mixin.py:115} INFO - [2022-10-01 18:50:28,383] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:50:28,422] {logging_mixin.py:115} INFO - [2022-10-01 18:50:28,422] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:50:28,449] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.883 seconds
+[2022-10-01 18:50:58,932] {processor.py:153} INFO - Started process (PID=9361) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:50:58,937] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:50:58,941] {logging_mixin.py:115} INFO - [2022-10-01 18:50:58,941] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:51:00,434] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:51:00,512] {logging_mixin.py:115} INFO - [2022-10-01 18:51:00,511] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:51:00,558] {logging_mixin.py:115} INFO - [2022-10-01 18:51:00,557] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:51:00,582] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 1.665 seconds
+[2022-10-01 18:51:30,983] {processor.py:153} INFO - Started process (PID=9415) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:51:30,985] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:51:30,986] {logging_mixin.py:115} INFO - [2022-10-01 18:51:30,986] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:51:31,380] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:51:31,412] {logging_mixin.py:115} INFO - [2022-10-01 18:51:31,411] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:51:31,436] {logging_mixin.py:115} INFO - [2022-10-01 18:51:31,436] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:51:31,449] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.471 seconds
+[2022-10-01 18:52:01,613] {processor.py:153} INFO - Started process (PID=9478) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:52:01,615] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:52:01,616] {logging_mixin.py:115} INFO - [2022-10-01 18:52:01,616] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:52:02,036] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:52:02,064] {logging_mixin.py:115} INFO - [2022-10-01 18:52:02,064] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:52:02,085] {logging_mixin.py:115} INFO - [2022-10-01 18:52:02,085] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:52:02,098] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.490 seconds
+[2022-10-01 18:52:32,312] {processor.py:153} INFO - Started process (PID=9534) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:52:32,313] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:52:32,314] {logging_mixin.py:115} INFO - [2022-10-01 18:52:32,314] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:52:32,796] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:52:32,821] {logging_mixin.py:115} INFO - [2022-10-01 18:52:32,820] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:52:32,846] {logging_mixin.py:115} INFO - [2022-10-01 18:52:32,846] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:52:32,862] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.556 seconds
+[2022-10-01 18:53:03,637] {processor.py:153} INFO - Started process (PID=9599) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:53:03,639] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:53:03,642] {logging_mixin.py:115} INFO - [2022-10-01 18:53:03,642] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:53:04,010] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:53:04,037] {logging_mixin.py:115} INFO - [2022-10-01 18:53:04,036] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:53:04,062] {logging_mixin.py:115} INFO - [2022-10-01 18:53:04,061] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:53:04,076] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.443 seconds
+[2022-10-01 18:53:34,159] {processor.py:153} INFO - Started process (PID=9653) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:53:34,160] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:53:34,162] {logging_mixin.py:115} INFO - [2022-10-01 18:53:34,162] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:53:34,589] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:53:34,613] {logging_mixin.py:115} INFO - [2022-10-01 18:53:34,611] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:53:34,639] {logging_mixin.py:115} INFO - [2022-10-01 18:53:34,638] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:53:34,652] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.499 seconds
+[2022-10-01 18:54:04,922] {processor.py:153} INFO - Started process (PID=9716) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:54:04,924] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:54:04,927] {logging_mixin.py:115} INFO - [2022-10-01 18:54:04,926] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:54:05,536] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:54:05,567] {logging_mixin.py:115} INFO - [2022-10-01 18:54:05,566] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:54:05,597] {logging_mixin.py:115} INFO - [2022-10-01 18:54:05,597] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:54:05,614] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.700 seconds
+[2022-10-01 18:54:35,993] {processor.py:153} INFO - Started process (PID=9779) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:54:35,995] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:54:35,997] {logging_mixin.py:115} INFO - [2022-10-01 18:54:35,997] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:54:36,550] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:54:36,584] {logging_mixin.py:115} INFO - [2022-10-01 18:54:36,583] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:54:36,614] {logging_mixin.py:115} INFO - [2022-10-01 18:54:36,614] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:54:36,631] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.644 seconds
+[2022-10-01 18:55:07,396] {processor.py:153} INFO - Started process (PID=9834) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:55:07,397] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:55:07,399] {logging_mixin.py:115} INFO - [2022-10-01 18:55:07,399] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:55:08,110] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:55:08,145] {logging_mixin.py:115} INFO - [2022-10-01 18:55:08,145] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:55:08,178] {logging_mixin.py:115} INFO - [2022-10-01 18:55:08,178] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:55:08,195] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.807 seconds
+[2022-10-01 18:55:38,343] {processor.py:153} INFO - Started process (PID=9897) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:55:38,346] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:55:38,348] {logging_mixin.py:115} INFO - [2022-10-01 18:55:38,348] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:55:39,087] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:55:39,118] {logging_mixin.py:115} INFO - [2022-10-01 18:55:39,117] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:55:39,155] {logging_mixin.py:115} INFO - [2022-10-01 18:55:39,155] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:55:39,175] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.841 seconds
+[2022-10-01 18:56:10,032] {processor.py:153} INFO - Started process (PID=9951) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:56:10,034] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:56:10,037] {logging_mixin.py:115} INFO - [2022-10-01 18:56:10,036] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:56:10,446] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:56:10,472] {logging_mixin.py:115} INFO - [2022-10-01 18:56:10,471] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:56:10,493] {logging_mixin.py:115} INFO - [2022-10-01 18:56:10,493] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:56:10,523] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.495 seconds
+[2022-10-01 18:56:41,236] {processor.py:153} INFO - Started process (PID=10015) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:56:41,238] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:56:41,240] {logging_mixin.py:115} INFO - [2022-10-01 18:56:41,240] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:56:41,624] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:56:41,649] {logging_mixin.py:115} INFO - [2022-10-01 18:56:41,649] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:56:41,670] {logging_mixin.py:115} INFO - [2022-10-01 18:56:41,670] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:56:41,698] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.467 seconds
+[2022-10-01 18:57:11,762] {processor.py:153} INFO - Started process (PID=10069) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:57:11,764] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:57:11,765] {logging_mixin.py:115} INFO - [2022-10-01 18:57:11,765] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:57:12,199] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:57:12,231] {logging_mixin.py:115} INFO - [2022-10-01 18:57:12,230] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:57:12,256] {logging_mixin.py:115} INFO - [2022-10-01 18:57:12,256] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:57:12,270] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.513 seconds
+[2022-10-01 18:57:43,133] {processor.py:153} INFO - Started process (PID=10122) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:57:43,134] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:57:43,136] {logging_mixin.py:115} INFO - [2022-10-01 18:57:43,135] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:57:43,513] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:57:43,536] {logging_mixin.py:115} INFO - [2022-10-01 18:57:43,536] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:57:43,558] {logging_mixin.py:115} INFO - [2022-10-01 18:57:43,558] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:57:43,572] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.444 seconds
+[2022-10-01 18:58:13,965] {processor.py:153} INFO - Started process (PID=10185) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:58:13,967] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:58:13,969] {logging_mixin.py:115} INFO - [2022-10-01 18:58:13,969] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:58:14,716] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:58:14,751] {logging_mixin.py:115} INFO - [2022-10-01 18:58:14,750] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:58:14,780] {logging_mixin.py:115} INFO - [2022-10-01 18:58:14,780] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:58:14,797] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.839 seconds
+[2022-10-01 18:58:45,506] {processor.py:153} INFO - Started process (PID=10249) to work on /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:58:45,508] {processor.py:641} INFO - Processing file /opt/airflow/dags/data_cleaning_dag/data_cleaning.py for tasks to queue
+[2022-10-01 18:58:45,509] {logging_mixin.py:115} INFO - [2022-10-01 18:58:45,509] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:58:45,889] {processor.py:651} INFO - DAG(s) dict_keys(['data_cleaning_dag']) retrieved from /opt/airflow/dags/data_cleaning_dag/data_cleaning.py
+[2022-10-01 18:58:45,918] {logging_mixin.py:115} INFO - [2022-10-01 18:58:45,918] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-10-01 18:58:45,946] {logging_mixin.py:115} INFO - [2022-10-01 18:58:45,946] {dag.py:2972} INFO - Setting next_dagrun for data_cleaning_dag to 2022-09-24T00:00:00+00:00, run_after=2022-10-24T00:00:00+00:00
+[2022-10-01 18:58:45,962] {processor.py:161} INFO - Processing /opt/airflow/dags/data_cleaning_dag/data_cleaning.py took 0.459 seconds

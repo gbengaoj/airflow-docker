@@ -1,0 +1,24 @@
+[2022-10-01 18:01:20,417] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: data_cleaning_dag.cleaned_data_message manual__2022-10-01T18:01:12.670844+00:00 [queued]>
+[2022-10-01 18:01:20,454] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: data_cleaning_dag.cleaned_data_message manual__2022-10-01T18:01:12.670844+00:00 [queued]>
+[2022-10-01 18:01:20,456] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-01 18:01:20,457] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-10-01 18:01:20,458] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-01 18:01:20,510] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): cleaned_data_message> on 2022-10-01 18:01:12.670844+00:00
+[2022-10-01 18:01:20,519] {standard_task_runner.py:52} INFO - Started process 1404 to run task
+[2022-10-01 18:01:20,528] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'data_cleaning_dag', 'cleaned_data_message', 'manual__2022-10-01T18:01:12.670844+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/data_cleaning_dag/data_cleaning.py', '--cfg-path', '/tmp/tmp3ol8h8tv', '--error-file', '/tmp/tmpo2_0_6j7']
+[2022-10-01 18:01:20,531] {standard_task_runner.py:80} INFO - Job 7: Subtask cleaned_data_message
+[2022-10-01 18:01:20,722] {task_command.py:371} INFO - Running <TaskInstance: data_cleaning_dag.cleaned_data_message manual__2022-10-01T18:01:12.670844+00:00 [running]> on host 408deac6c455
+[2022-10-01 18:01:20,946] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_cleaning_dag
+AIRFLOW_CTX_TASK_ID=cleaned_data_message
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-01T18:01:12.670844+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-10-01T18:01:12.670844+00:00
+[2022-10-01 18:01:20,949] {logging_mixin.py:115} INFO - Data successfully cleaned
+[2022-10-01 18:01:20,950] {python.py:173} INFO - Done. Returned value was: None
+[2022-10-01 18:01:20,986] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=data_cleaning_dag, task_id=cleaned_data_message, execution_date=20221001T180112, start_date=20221001T180120, end_date=20221001T180120
+[2022-10-01 18:01:21,059] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-10-01 18:01:21,123] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
